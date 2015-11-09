@@ -120,7 +120,7 @@ class Options
 {
  public:
     inline Options()
-        : mFilenamesToIgnore("^(build|dist|\\.cabal.*|.*\\.(html|docx?|xlsx?|o|py[oc]|git|gitignore|so[\\.0-9]*|a|dylib|libs|exe|ilk|obj|pch|pdb|idb)(\\.(bz2|gz|xz))?)$", std::regex::icase),
+        : mFilenamesToIgnore("^(build|dist|\\.cabal.*|.*\\.(html|docx?|xlsx?|o|py[oc]|git|gitignore|so[\\.0-9]*|a|dylib|libs|exe|ilk|obj|pch|pdb|idb|fasl)(\\.(bz2|gz|xz))?)$", std::regex::icase),
           mLineLengthThreshold(100), mFilenameForStdin("*stdin*")
         {
         }
